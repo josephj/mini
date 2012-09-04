@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mini xmlns:xi="http://www.w3.org/2001/XInclude">
+
+    <path type="css">$DEV_ROOT/static</path>
+    <path type="js">$DEV_ROOT/static</path>
+
+    <module id="yui-css">
+        <file type="css" src="yui/3.1.1/cssreset/reset.css" />
+        <file type="css" src="yui/3.1.1/cssfonts/fonts.css" />
+        <file type="css" src="yui/3.1.1/cssgrids/grids.css" />
+    </module>
+
+    <module id="framework">
+        <file type="js" src="yui/3.1.1/yui/yui.js" />
+        <file type="js" src="yui/3.1.1/oop/oop.js" />
+        <file type="js" src="yui/3.1.1/dom/dom.js" />
+        <file type="js" src="yui/3.1.1/event-custom/event-custom.js" />
+        <file type="js" src="yui/3.1.1/event/event.js" />
+        <file type="js" src="yui/3.1.1/pluginhost/pluginhost.js" />
+        <file type="js" src="yui/3.1.1/node/node.js" />
+        <file type="js" src="yui/3.1.1/classnamemanager/classnamemanager.js" />
+        <file type="js" src="yui/3.1.1/attribute/attribute.js" />
+        <file type="js" src="yui/3.1.1/base/base.js" />
+        <file type="js" src="yui/3.1.1/plugin/plugin.js" />
+        <file type="js" src="yui/3.1.1/event-simulate/event-simulate.js" />
+        <file type="js" src="yui/3.1.1/node/node-event-simulate.js" />
+        <file type="js" src="yui/3.1.1/node-focusmanager/node-focusmanager.js" />
+        <file type="js" src="yui/3.1.1/substitute/substitute.js" />
+        <file type="js" src="core.js" />
+        <file type="js" src="sandbox.js" />
+    </module>
+
+    <module id="index">
+        <require module="yui-css" />
+        <require module="framework" />
+        <file type="css" src="core.css" />
+        <file type="css" src="mod.css" />
+        <file type="css" src="_masthead.css" />
+        <file type="css" src="_photo_list.css" />
+        <file type="css" src="_photo_filter.css" />
+        <file type="css" src="_photo_viewer.css" />
+        <file type="css" src="_introduction.css" />
+        <file type="js"  src="_photo_viewer.js" />
+        <file type="js"  src="_photo_filter.js" />
+        <file type="js"  src="_photo_list.js" />
+    </module>
+
+</mini>
