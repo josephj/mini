@@ -1,0 +1,7 @@
+DocumentRoot    /var/www/assets/
+Alias /mini     /var/www/lib/mini/mini_web.php
+SetEnv DEV_ROOT /var/www/
+<LocationMatch "/mini">
+    php_admin_flag  safe_mode off
+    php_admin_value open_basedir /
+</LocationMatch>
